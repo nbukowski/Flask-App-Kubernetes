@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-tutorial
+  labels:
+    app: flask-tutorial
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: flask-tutorial
+  # pod spec begins here
+  template:
+    metadata:
+      labels:
+        app: flask-tutorial
+    spec:
+      containers:
+        - name: flask-tutorial
+          image: registry.digitalocean.com/flask-registry/lab9:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 5000

@@ -1,0 +1,13 @@
+__pycache__
+config.py
+chatbot_env
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+digitalOceanTokenAuthen.txt
+deployment.yaml
+service.yaml
+kubectl
+ontext

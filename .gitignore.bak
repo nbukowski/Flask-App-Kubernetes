@@ -1,0 +1,9 @@
+__pycache__
+chatbot_env
+app.cpython-310.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+ontext
+.env
